@@ -1,0 +1,34 @@
+# Obter a lista de usuários
+GET http://localhost:3000/users
+Content-Type: application/json
+###
+
+# Inserir novo usuário
+POST http://localhost:3000/userInsert
+Content-Type: application/json
+
+{
+    "nome": "zzzz",
+    "email": "czzzzzxczcz@teste.com",
+    "celular": "54 1234 5678",
+    "senha": 12345
+}
+###
+
+# Alterar usuário
+PUT http://localhost:3000/userUpdate/5f5ac7dd157d7323a8e0ece5
+Content-Type: application/json
+
+{
+    "nome": "Jaqson Dalbosco",
+    "email": "jaqson@upf.br",
+    "celular": "54 6546 2423",
+    "senha": "12345"
+}
+###
+
+
+# Excluir usuário
+DELETE http://localhost:3000/userDelete/5f5ac7dd157d7323a8e0ece5
+Content-Type: application/json
+###
